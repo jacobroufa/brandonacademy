@@ -140,3 +140,9 @@ article.node .below-content header .artist-name .field-item {font-weight:bold !i
 article.node .below-content .field-name-body strong {font-weight: normal !important;}
 
 .front #block-block-4 { position: relative; top: -90px; font-size: 14px; color: #666;}
+
+.view-xsearch #webform-ajax-1121,
+.view-xsearch #webform-client-form-1121 {
+  text-align: center;
+}
+
