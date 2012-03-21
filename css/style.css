@@ -137,6 +137,22 @@ span.form-required {
   z-index: 2;
 }
 
+.sidebar-second.page-search .main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page-search .region-sidebar-second {
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  right: -80px;
+}
+
+.block-facetapi ul {
+  list-style-type: none;
+}
+
 .pre-page {
   max-width: 960px;
   width: 100%;
