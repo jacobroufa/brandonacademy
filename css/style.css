@@ -216,7 +216,8 @@ header #edit-submit--2 {
   margin-top: 0;
 }
 
-.front header #edit-submit {
+.front header #edit-submit,
+.front header #edit-submit--2 {
   height: 51px;
   width: 59px;
   right: 35px;
