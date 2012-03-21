@@ -555,12 +555,19 @@ article.node-article {
   margin:0 0 10px;
 }
 
+#discoverList-nav {
+  position: relative;
+  float: right;
+  left: -50%;
+}
 .ln-letters {
   overflow:hidden;
   padding-top: 10px;
   clear: both;  
-  width: 610px;
   margin: 0 auto;
+  width: 100%;
+  position: relative;
+  left: 50%;
 }
 .ln-letters a { font-size:0.9em; display:block; float:left; padding:2px 6px; border:1px solid silver; border-right:none; text-decoration:none; }
 .ln-letters a.ln-last { border-right:1px solid silver; }
