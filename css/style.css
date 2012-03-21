@@ -1,0 +1,603 @@
+/**
+ * Stylesheet for BrandonAcademy
+ * Author: Jake Roufa
+ *
+ * SITE COLORS:
+ * Primary color: #0000ff (Blue)
+ * Highlight color: #ff0000 (Red)
+ * Text color: #444 (Grey)
+ *
+ * TABLE OF CONTENTS, change this to whatever fits your coding habits
+ * 1. Typography
+ * 2. Layout
+ * 3. Decoration per Region
+ * 4. Forms
+ * 5. Drupal Elements
+ * 6. Drupal Modules
+ * 7. Block Skins
+ *
+ */
+
+/**
+ * [ 1 ] TYPOGRAPHY
+ */
+
+body {
+  font-size: 13px/1.5em;
+  font-family: Arial, Georgia !important;
+  color:  #444; 
+  background: #ffffff;
+}
+
+a {
+    color: #9B3D3D;
+    font-family: Arial, Georgia;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus nav ul a {
+    color: #9B3D3D;
+    font-family: Arial, Georgia;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:active nav ul a {
+    color: #9B3D3D;
+    font-family: Arial, Georgia;
+    font-size: 14px;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Georgia, "Times New Roman", Times, serif;
+}
+
+html.js input.form-autocomplete {
+  background: none !important;
+}
+
+/**
+ * Typographical scale by Mark Boulton
+ */
+
+h1 {
+  font-size: 218%;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+}
+
+h3 {
+  font-size: 145%;
+}
+
+h4 {
+  font-size: 118%;
+}
+
+/**
+ * [ 2 ] Layout
+ */
+
+html, body {
+  height: 100%;
+}
+
+hr {
+  clear: both;
+  margin: 0 auto 24px;
+  width: 640px;
+  border-style: solid;
+}
+
+hr.fullpage {
+  width: 100%;
+}
+
+.throbber {
+  display: none !important;
+}
+
+span.form-required {
+  display: none;
+}
+
+#page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: -185px auto 60px;
+}
+
+.front #page {
+  margin: -526px auto 20px;
+}
+
+#page .top-push {
+  height: 185px;
+  z-index: -2;
+}
+
+.front #page .top-push {
+  height: 526px;
+  z-index: -2;
+}
+
+#page .end-push {
+  height: 60px;
+  z-index: -2;
+}
+
+#page .main {
+  z-index: 2;
+}
+
+.pre-page {
+  max-width: 960px;
+  width: 100%;
+  margin: 60px auto 0;
+  position: relative;
+  height: auto;
+  text-align: center;
+  z-index: 3;
+}
+
+header.masthead {
+  max-width: 960px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.front .pre-page .logo {
+  float: none;
+}
+
+.front .pre-page .logo img {
+  height: 180px;
+  margin-top: 50px;
+  margin-bottom: 18px;
+}
+
+.pre-page .logo {
+  float: left;
+  z-index: 9;
+}
+
+.pre-page .logo img {
+  height: 120px;
+}
+
+header .region-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header #block-views-exp-xsearch-page-1 {
+  padding: 20px 0;
+}
+
+header #edit-sitewide {
+  width: 312px !important;
+  height: 26px !important;
+  font-family: arial;
+  font-size: 14px;
+}
+
+header #edit-sitewide-wrapper {
+  padding: 0;
+  float: none;
+}
+
+.front header #edit-sitewide {
+  width: 512px !important;
+  height: 50px !important;
+  font-size: 24px;
+  margin-top: 12px;
+  padding-left: 10px;
+}
+
+header #edit-submit,
+header #edit-submit--2 {
+  height: 26px;
+  width: 30px;
+  overflow: hidden;
+  text-indent: 9999em;
+  border: none;
+  background: no-repeat;
+  position: relative;
+  margin-top: 0;
+}
+
+.front header #edit-submit {
+  height: 51px;
+  width: 59px;
+  right: 35px;
+  margin-top: 0;
+}
+
+.mast {
+  min-height: 100%;
+}
+
+* html .mast {
+  height: 100%;
+}
+
+.front .mast {
+  min-height: 0;
+  bottom: 0;
+}
+
+h1.page-title {
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.not-front footer {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  margin: -50px auto 0;
+  height: 40px;
+  padding-top: 10px;
+  position: relative;
+}
+
+footer nav ul li {
+  display: inline;
+}
+
+footer nav ul li:before {
+  content: "\0020 \0020 \00B7 \0020";
+}
+
+footer nav ul li.first:before {
+  content: "\0020 \0020";
+}
+
+/** Featured Videos */
+
+.region-postblocks {
+  clear: both;
+  height: 250px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.region-postblocks .view-featured-videos ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.region-postblocks .view-featured-videos ul li {
+  float: left;
+  border-radius: 1px 1px 1px 1px;
+  margin: 0 5px 5px 0;
+  height: 125px;
+  width: 175px;
+}
+
+.region-postblocks .view-featured-videos ul li .views-field-field-image a img {
+  width: 175px;
+}
+
+.region-postblocks .view-featured-videos ul li .views-field-field-artist {
+  font-family: Arial, Georgia;
+  font-size: 11px;
+  font-style: italic;
+  color: #9b3d3d;
+}
+
+.region-postblocks .view-featured-videos ul li .views-field-title a {
+  font-family: Arial;
+  font-size: 13px;
+  text-decoration: none;
+  color: #71645b;
+}
+
+/**
+ * [ 3 ] Etcetera
+ */
+
+/* White Noise */
+.noise {
+  position: relative;
+  z-index: 1;
+}
+		
+.noise:before, .body-noise:before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+/* Remove AJAX Notifications/Spinners/Messages */
+#search-block-form .form-item-search-block-form .ac_input,
+#edit-search-api-views-fulltext {
+  background-image: none;
+  padding-left: 6px;
+  color: #999999;
+}
+
+.front #edit-search-api-views-fulltext {
+  padding-left: 12px;
+}
+
+.ajax-progress .message {
+  display:none;
+}
+
+#webform-ajax-1088 .message,
+#page .message {
+  display: none;
+}
+
+/* Inline Tags */
+.node .field-name-field-tags .field-item {
+  display: inline;
+  padding: 5px;
+}
+
+input, textarea {
+    -moz-transition: border 0.2s linear 0s, background-color 0.2s linear 0s;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 0px 0px !important;
+    box-shadow: none !important;
+}
+
+#block-menu-menu-top-menu {
+  position: relative;
+  bottom: 110px;
+  float: right;
+  z-index: 2;
+}
+
+#block-menu-menu-top-menu ul {
+  list-style-type: none;
+}
+
+#block-menu-menu-top-menu ul li {
+  display: inline;
+}
+
+#block-menu-menu-top-menu ul li a {
+  font-size: 18px;
+}
+
+/* Search Results */
+.not-front #block-views-exp-xsearch-page-1 {
+  position: relative;
+  width: 312px;
+  height: 35px;
+  top: 20px;
+  overflow: visible;
+  right: -298px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#edit-search-api-views-fulltext-wrapper {
+  display: inline;
+  float: none;
+  padding: 0;
+  width: auto;
+}
+
+#views-exposed-form-xsearch-page-1 .views-submit-button {
+  display: inline;
+  float: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 150px;
+  bottom: 42px;
+}
+
+.front #views-exposed-form-xsearch-page-1 .views-submit-button {
+  left: 270px;
+  bottom: 67px;
+}
+
+#discoverList .views-row,
+.view-xsearch .views-row {
+  clear: both;
+  margin: 0 auto;
+  width: 640px;
+}
+
+#discoverList .views-row hr,
+.view-xsearch .views-row hr {
+  margin: 5px 0;
+}
+
+#discoverList .views-row-first hr,
+.view-xsearch .views-row-first hr {
+  display: none;
+}
+
+#discoverList .views-field-field-image,
+#discoverList .views-field-body,
+.view-xsearch .views-field-field-image,
+.view-xsearch .views-field-body {
+  display: block;
+  float: left;
+}
+
+#discoverList .views-field-field-image,
+.view-xsearch .views-field-field-image {
+  width: 220px;
+}
+
+#discoverList .views-field-field-image {
+  left: -420px;
+  position: relative;
+}
+
+#discoverList .views-field-body,
+.view-xsearch .views-field-body {
+  width: 420px;
+  margin-top: 8px;
+}
+
+#discoverList .views-field-body {
+  left: 220px;
+  position: relative;
+}
+
+#discoverList .ln-no-match {
+  text-align: center;
+}
+
+.view-xsearch .pager {
+  clear: both;
+  padding-top: 35px;
+  margin: 25px auto;
+  text-align: center;
+  list-style-type: none;
+}
+
+.view-xsearch .pager li {
+  display: inline;
+}
+
+.page-search .search-results {
+  list-style-type: none;
+}
+
+.page-search .pager {
+  list-style-type: none;
+}
+
+.page-search .pager li {
+  display: inline;
+}
+
+article.node-article {
+  text-align: center;
+}
+
+.node-article .below-content header {
+  position: relative;
+  float: right;
+  left: -50%;
+}
+
+.node-article .below-content .header-inner {
+  position: relative;
+  left: 50%;
+}
+
+.node-article .below-content header .node-title,
+.node-article .below-content header .by,
+.node-article .below-content header .artist-name {
+  float: left;
+  padding: 2px;
+}
+
+.node-article .below-content .field-name-body {
+  clear: both;
+}
+
+.node-article .below-content .field-name-field-song-title {
+  border: 0;
+  padding: 0;
+  clear: none;
+}
+
+.node-article .below-content .field-name-field-song-title img {
+  display: none;
+}
+
+/* Discover Page */
+#discoverList {
+  list-style-type: none;
+  clear: both;
+  padding-top: 10px;
+}
+
+.listNav {
+  margin:0 0 10px;
+}
+
+.ln-letters {
+  overflow:hidden;
+  padding-top: 10px;
+  clear: both;  
+  width: 610px;
+  margin: 0 auto;
+}
+.ln-letters a { font-size:0.9em; display:block; float:left; padding:2px 6px; border:1px solid silver; border-right:none; text-decoration:none; }
+.ln-letters a.ln-last { border-right:1px solid silver; }
+.ln-letters a:hover,
+.ln-letters a.ln-selected { background-color:#eaeaea; }
+.ln-letters a.ln-disabled { color:#ccc; }
+.ln-letter-count { text-align:center; font-size:0.8em; line-height:1; margin-bottom:3px; color:#336699; top:0 !important; }
+
+/* Contact Page */
+.page-contact {
+  text-align: center;
+}
+
+.page-contact #edit-message {
+  width: 440px;
+  margin: 0 auto;
+}
+
+.page-contact .grippie {
+  display: none;
+}
+
+.page-contact h1.page-title {
+  padding-bottom: 20px;
+}
+
+.page-contact form .form-item label {
+  padding-left: 10px;
+}
+
+/* Submit Page */
+#node-1088 {
+  text-align: center;
+}
+
+/* Feedback Form */
+#block-feedback-form .content {
+  z-index: 10;
+}
+  
+#block-feedback-form .overlay {
+  z-index: 9
+}
+
+#block-feedback-form a#close {
+  height: 35px;
+  width: 37px;
+}
+
+#block-feedback-form a#close:hover {
+  background-position: 0;
+}
+
+.feedback-link {
+  display: block;
+  text-align: center;
+}

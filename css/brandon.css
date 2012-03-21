@@ -1,0 +1,142 @@
+#results-title a {
+font-weight: bold;
+font-size: 19px;
+line-height: 26px
+}
+
+#results-artist {
+font-weight: bold;
+font-size: 15px;
+}
+
+#results-body {
+font-size: 14px;
+color: #656565;
+line-height: 60px;
+}
+
+#node-77 p {
+font-size: 14px;
+color: #656565;
+margin-top: 14px;
+text-align: center;
+}
+
+.grid-inner {
+margin: 0px !important; 
+}
+
+#block-menu-menu-top-menu ul li a {
+font-size: 13px !important;
+padding: 24px !important;
+font-weight: bold;
+}
+
+#search_result_count {font-family: Georgia; color: #656565; font-style: italic; font-weight: bold; margin-right: 18px; float: right;}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #dbdbdb !important;
+  margin: 1em 0;
+  padding: 0;
+}
+
+header #edit-sitewide {
+    color: #858585 !important;
+    font-family: arial;
+    font-size: 14px;
+    height: 25px;
+    width: 266px;
+}
+
+#node-1088 p {font-size: 14px;
+color: #656565; margin-bottom: 24px;}
+
+#webform-component-youtube-url label {
+    font-family: arial !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    color: #656565;
+    margin-bottom: 10px;}
+
+#webform-client-form-1088 #edit-submit {font-size: 13px; font-weight: bold;}
+
+.front header #edit-sitewide {
+    font-size: 24px !important;
+    height: 50px;
+    margin-top: 22px !important;
+    padding-left: 10px;
+    width: 512px;
+}
+
+input[type=button],input[type=reset],input[type=submit],button,input.form-submit,.form-actions a,.form-actions a:visited{width:auto;height:auto;margin:0.4em 6px 0 0 !important;padding:6px 12px 6px 12px;cursor:pointer;background-color:#fff;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e4e4e4));background-image:-webkit-linear-gradient(#ffffff,#e4e4e4);background-image:-moz-linear-gradient(#ffffff,#e4e4e4);background-image:-o-linear-gradient(#ffffff,#e4e4e4);background-image:-ms-linear-gradient(#ffffff,#e4e4e4);background-image:linear-gradient(#ffffff,#e4e4e4);-moz-box-shadow:rgba(255,255,255,0.75) 0 0 0 1px inset;-webkit-box-shadow:rgba(255,255,255,0.75) 0 0 0 1px inset;-o-box-shadow:rgba(255,255,255,0.75) 0 0 0 1px inset;box-shadow:rgba(255,255,255,0.75) 0 0 0 1px inset;background-repeat:no-repeat;border-color:#ccc;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;line-height:1em;word-wrap:normal;overflow:visible}
+
+
+.page-contact form .form-item label {
+    color: #656565 !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    padding-left: 10px !important;
+}
+
+.form-submit {
+    font-size: 13px !important;
+    font-weight: bold !important;
+}
+
+h2 {font-size: 39px; !important}
+
+.feedback-link a {
+    color: #9B3D3D;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+.feedback-link {
+    color: #9B3D3D !important;
+    display: block;
+    font-size: 12px !important;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.node-article .below-content header .node-title, .node-article .below-content header .by, .node-article .below-content header .artist-name {
+    color: #656565 !important;
+    float: left;
+    font-size: 14px !important;
+    padding: 2px;
+    font-weight: bold;
+}
+
+span.by {font-weight: normal !important;}
+
+input, textarea {
+    -moz-transition: border 0.2s linear 0s, background-color 0.2s linear 0s;
+    background-color: #FFFFFF;
+    border-radius: 0 0 0 0 !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+}
+
+article.node .below-content .field-name-body { font-size: 14px; color: #656565; }
+
+#search_result_count {
+    color: #656565 !important;
+    float: right;
+    font-family: Arial;
+    font-size: 15px !important;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+article.node .below-content header .node-title {font-weight:bold !important;}
+
+article.node .below-content header .artist-name .field-item {font-weight:bold !important;}
+
+article.node .below-content .field-name-body strong {font-weight: normal !important;}
+
+.front #block-block-4 { position: relative; top: -90px; font-size: 14px; color: #666;}
