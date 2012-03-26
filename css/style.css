@@ -625,3 +625,17 @@ article.node-article {
   display: block;
   text-align: center;
 }
+
+/* Centering Social Media buttons */
+article.node .field-type-addthis {
+  position: relative;
+  float: right;
+  text-align: left;
+  left: -50%;
+  padding-top: 25px;
+}
+
+article.node .field-type-addthis .addthis_toolbox {
+  position: relative;
+  left: 50%;
+}

@@ -101,6 +101,7 @@
       hide($content['body']);
       hide($content['field_artist_name']);
       hide($content['field_song_title']);
+      hide($content['field_social']);
       print render($content);
     ?>
   </div>
@@ -117,6 +118,8 @@
       <?php print render($content['body']); ?>
     <?php endif; ?>
   </div>
+
+  <?php print render($content['field_social']); ?>
 
   <?php if ($links = render($content['links'])): ?>
     <footer class="link-wrapper">
