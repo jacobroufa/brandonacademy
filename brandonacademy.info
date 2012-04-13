@@ -14,10 +14,9 @@ engine                                      = phptemplate
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/brandon.css
-stylesheets[all][] = js/Smooth-Div-Scroll/css/smoothDivScroll.css
-scripts[] = js/script.js
 scripts[] = js/jquery.listnav.min-2.1.js
-scripts[] = js/Smooth-Div-Scroll/js/jquery.smoothdivscroll-1.2-min.js
+scripts[] = js/jquery.jcarousel.min.js
+scripts[] = js/script.js
 
 ; --------------------------------------------------------------------------------
 ; Regions.

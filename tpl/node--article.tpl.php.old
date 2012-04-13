@@ -8,18 +8,6 @@
     </footer>
   <?php endif; ?> -->
 
-  <div class="above-content">
-    <?php if ($title): ?>
-      <header><div class="header-inner">
-        <?php print render($title_prefix); ?>
-        <span<?php print $title_attributes; ?>><?php print render($title); ?></span>
-        <br />
-        <?php print theme('image_style', array( 'path' => render($content['field_artist_name']['#items'][0]['taxonomy_term']->field_artist_image['und'][0]['uri']), 'style_name' => 'artist_image')); ?> <span class="artist-name"><?php print render($content['field_artist_name'][0]['#markup']); ?></span>
-        <?php print render($title_suffix); ?>
-      </div></header>
-    <?php endif; ?>
-  </div>
-
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
@@ -29,6 +17,7 @@
       hide($content['field_featured']);
       hide($content['field_instrument']);
       hide($content['field_artist']);
+      hide($content['title']);
       hide($content['body']);
       hide($content['field_artist_name']);
       hide($content['field_song_title']);
@@ -38,6 +27,13 @@
   </div>
 
   <div class="below-content">
+    <?php if ($title): ?>
+      <header><div class="header-inner">
+        <?php print render($title_prefix); ?>
+        <span<?php print $title_attributes; ?>><?php print render($title); ?></span><span class="by">by</span><span class="artist-name"><?php print render($content['field_artist_name']); ?></span>
+        <?php print render($title_suffix); ?>
+      </div></header>
+    <?php endif; ?>
     <?php if ($content['body']): ?>
       <?php print render($content['body']); ?>
     <?php endif; ?>

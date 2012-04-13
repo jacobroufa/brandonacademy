@@ -400,6 +400,14 @@ input, textarea {
   font-size: 18px;
 }
 
+#block-menu-menu-top-menu ul li:before {
+  content: "\0020 \0020 \00B7 \0020";
+}
+
+#block-menu-menu-top-menu ul li.first:before {
+  content: "\0020 \0020";
+}
+
 /* Search Results */
 .not-front #block-views-exp-xsearch-page-1 {
   position: relative;
@@ -510,6 +518,11 @@ input, textarea {
 
 article.node-article {
   text-align: center;
+}
+
+.node-article header .header-inner img {
+  position: relative;
+  top: 5px;
 }
 
 .node-article .below-content header {
@@ -638,4 +651,73 @@ article.node .field-type-addthis {
 article.node .field-type-addthis .addthis_toolbox {
   position: relative;
   left: 50%;
+}
+
+/* Front Page Recent Tutorials Slider */
+#block-ba-module-recent-tutorials .grid-inner {
+  width: 100%;
+  text-align: center;
+}
+
+#recent-tutorials {
+  position: relative;
+  float: right;
+  left: -50%;
+  text-align: right;
+}
+
+#recent-tutorials .recent-tutorials {
+  position: relative;
+  left: 50%;
+  width: 960px;
+}
+
+#recent-tutorials #previous,
+#recent-tutorials .jcarousel-clip,
+#recent-tutorials #next {
+  float: left;
+}
+
+#recent-tutorials #previous {
+  text-indent: 9999em;
+  overflow: hidden;
+  background: url('../images/previous.png') no-repeat transparent;
+  width: 18px;
+  height: 40px;
+  margin: 75px 2px 0 0;
+}
+
+#recent-tutorials #next {
+  text-indent: 9999em;
+  overflow: hidden;
+  background: url('../images/next.png') no-repeat transparent;
+  width: 18px;
+  height: 40px;
+  margin: 75px 0 0 2px;
+}
+
+#recent-tutorials .recent-tutorials .jcarousel-clip {
+  width: 920px;
+  overflow: hidden;
+}
+
+#recent-tutorials .tutorial-list {
+  width: 920px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+#recent-tutorials .node {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 2px;
+  width: 180px;
+  height: 250px;
+}
+
+#recent-tutorials .node .overlay {
+  text-align: center;
 }

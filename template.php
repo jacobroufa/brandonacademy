@@ -22,3 +22,12 @@ function brandonacademy_form_alter(&$form, &$form_state, $form_id) {
   }
 
 }
+
+function brandonacademy_preprocess_node(&$variables) {
+  if ($variables['view_mode']) {
+    $variables['theme_hook_suggestions'][] = 'node__' . $variables['view_mode'];
+  }
+  if ($variables['view_mode']) {
+    $variables['theme_hook_suggestions'][] = 'node__' . $node->type . '__' . $variables['view_mode'];
+  }
+}

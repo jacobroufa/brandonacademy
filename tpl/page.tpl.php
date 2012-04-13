@@ -130,11 +130,11 @@
           <?php if ($tabs = render($tabs)): ?><div class="tabs grid-inner"><?php print $tabs; ?></div><?php endif; ?>
           <?php print render($page['help']); ?>
           <?php if ($action_links = render($action_links)): ?><ul class="action-links grid-inner"><?php print $action_links; ?></ul><?php endif; ?>
-          <?php if (!drupal_is_front_page()) { ?>
+          <!-- <?php if (!drupal_is_front_page()) { ?> -->
             <?php print render($page['content_top']); ?>
             <?php print render($page['content']); ?>
             <?php print render($page['content_bottom']); ?>
-          <?php } ?>
+          <!-- <?php } ?> -->
         </div> <!-- end .main -->
       </div> <!-- end .content-column -->
 

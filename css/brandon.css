@@ -91,16 +91,17 @@ h2 {font-size: 39px; !important}
 .feedback-link a {
     color: #9B3D3D;
     display: block;
-    font-size: 14px;
+    font-size: 9px;
     text-align: center;
 }
 
 .feedback-link {
     color: #9B3D3D !important;
     display: block;
-    font-size: 12px !important;
+    font-size: 9px !important;
     text-align: center;
     margin-bottom: 16px;
+    margin-top: 8px;
 }
 
 .node-article .below-content header .node-title, .node-article .below-content header .by, .node-article .below-content header .artist-name {
@@ -146,3 +147,8 @@ article.node .below-content .field-name-body strong {font-weight: normal !import
   text-align: center;
 }
 
+.node header .header-inner .node-title { font-size: 39px; margin-bottom: 14px; font-weight: bold; color: #141415;}
+
+.node header .header-inner .artist-name { font-size: 12px; font-size:11px; color: #656565; font-style: italic;}
+
+.node header .header-inner { margin-bottom: 14px;}
