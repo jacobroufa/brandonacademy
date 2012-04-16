@@ -721,3 +721,22 @@ article.node .field-type-addthis .addthis_toolbox {
 #recent-tutorials .node .overlay {
   text-align: center;
 }
+
+/* Artist Picture Upload */
+.view-artist-name-edit .views-table {
+  margin: 0 auto;
+}
+
+.view-artist-name-edit .views-table .views-field {
+  padding: 3px 10px;
+}
+
+.view-artist-name-edit .item-list ul.pager {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.view-artist-name-edit .item-list ul.pager li {
+  display: inline;
+}
