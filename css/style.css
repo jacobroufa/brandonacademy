@@ -723,6 +723,11 @@ article.node .field-type-addthis .addthis_toolbox {
 }
 
 /* Artist Picture Upload */
+.view-artist-name-edit .view-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 .view-artist-name-edit .views-table {
   margin: 0 auto;
 }
