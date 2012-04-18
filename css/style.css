@@ -722,6 +722,98 @@ article.node .field-type-addthis .addthis_toolbox {
   text-align: center;
 }
 
+/* Front Page Beginner Tutorials Slider */
+#block-ba-module-beginner-tutorials .grid-inner {
+  width: 100%;
+  text-align: center;
+}
+
+#beginner-tutorials {
+  position: relative;
+  float: right;
+  left: -50%;
+  text-align: right;
+}
+
+#beginner-tutorials .beginner-tutorials {
+  position: relative;
+  left: 50%;
+  width: 960px;
+}
+
+#beginner-tutorials #previous,
+#beginner-tutorials .jcarousel-clip,
+#beginner-tutorials #next {
+  float: left;
+}
+
+#beginner-tutorials #previous {
+  text-indent: 9999em;
+  overflow: hidden;
+  background: url('../images/previous.png') no-repeat transparent;
+  width: 18px;
+  height: 40px;
+  margin: 75px 2px 0 0;
+}
+
+#beginner-tutorials #next {
+  text-indent: 9999em;
+  overflow: hidden;
+  background: url('../images/next.png') no-repeat transparent;
+  width: 18px;
+  height: 40px;
+  margin: 75px 0 0 2px;
+}
+
+#beginner-tutorials .beginner-tutorials .jcarousel-clip {
+  width: 920px;
+  overflow: hidden;
+}
+
+#beginner-tutorials .tutorial-list {
+  width: 920px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+#beginner-tutorials .node {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0 2px;
+  width: 180px;
+  height: 250px;
+}
+
+#beginner-tutorials .node .overlay {
+  text-align: center;
+}
+
+/* Artist Picture Upload */
+.view-artist-name-edit .view-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.view-artist-name-edit .views-table {
+  margin: 0 auto;
+}
+
+.view-artist-name-edit .views-table .views-field {
+  padding: 3px 10px;
+}
+
+.view-artist-name-edit .item-list ul.pager {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.view-artist-name-edit .item-list ul.pager li {
+  display: inline;
+}
 /* Artist Picture Upload */
 .view-artist-name-edit .view-header {
   text-align: center;

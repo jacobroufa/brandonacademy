@@ -39,11 +39,35 @@
       });
 
       function recentCarousel(carousel) {
-        $('#next', context).bind('click', function() {
+        $('#recent-tutorials #next', context).bind('click', function() {
           carousel.next();
           return false;
         });
-        $('#previous', context).bind('click', function() {
+        $('#recent-tutorials #previous', context).bind('click', function() {
+          carousel.prev();
+          return false;
+        });
+      }; 
+    }
+  };
+
+// Front Page Beginner Tutorials Carousel
+  Drupal.behaviors.beginnerTutorials = {
+    attach: function (context, settings) {
+      $('#beginner-tutorials .beginner-tutorials', context).jcarousel({
+        wrap: 'circular',
+        scroll: 1,
+        initCallback: beginnerCarousel,
+        buttonNextHTML: null,
+        buttonPreviousHTML: null,
+      });
+
+      function beginnerCarousel(carousel) {
+        $('#beginner-tutorials #next', context).bind('click', function() {
+          carousel.next();
+          return false;
+        });
+        $('#beginner-tutorials #previous', context).bind('click', function() {
           carousel.prev();
           return false;
         });
